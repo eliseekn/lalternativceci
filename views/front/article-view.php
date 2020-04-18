@@ -62,6 +62,44 @@ ob_start();
                                 </div>
                             </div>
                         </div>
+
+                        
+				<!-- Grid row -->
+				<div class="row mb-5">
+					<!-- Grid column -->
+					<div class="col-md-12 text-center">
+						<h4 class="text-center font-weight-bold dark-grey-text mt-3 mb-3">
+							<strong>Partager cet article: </strong>
+
+						</h4>
+						
+						<a 
+							href="<?= "https://www.facebook.com/sharer.php?t=". $blog_single[0]['title']['rendered'] ."&u=https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"?>" 
+                            target="_blank" 
+							id="facebook-share" 
+							class="btn btn-fb btn-sm">
+							<i class="fab fa-facebook-f left"></i> Facebook
+						</a>
+
+						<a 
+							href="<?= "https://twitter.com/intent/tweet?text=". $blog_single[0]['title']['rendered'] ."... https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"?>" 
+                            target="_blank" 
+							id="twitter-share" 
+							class="btn btn-tw btn-sm">
+							<i class="fab fa-twitter left"></i> Twitter
+						</a>
+
+						<a 
+							href="<?= "https://www.linkedin.com/sharing/share-offsite/?url=https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"?>" 
+                            target="_blank" 
+                            id="linkedin-share" 
+							class="btn btn-li btn-sm">
+							<i class="fab fa-linkedin-in left"></i> Linkedin
+						</a>
+					</div>
+					<!-- Grid column -->
+				</div>
+
                   </div>
                   <!-- Grid column -->
                 </div>
